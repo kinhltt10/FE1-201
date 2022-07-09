@@ -1,0 +1,509 @@
+* {
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-size: 18px;
+}
+
+.header {
+    padding-top: 5px;
+    position: relative;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    padding: 25px;
+    text-align: center;
+}
+
+@media screen and (max-width: 991px) {
+    .dfd-menu {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        top: 95px;
+        background: #353535;
+        transform: scaleY(0);
+        transform-origin: 0 0 0;
+        transition: all 0.3s ease;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .header .logo {
+        left: 0;
+        transform: translateY(-50%) translateX(20px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nav-header .purchase a {
+        display: none;
+    }
+}
+.pull-right {
+    margin-right: 0;
+    float: right;
+}
+.nav-header {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    padding-top: 40px;
+}
+
+.dfd-menu {
+    list-style: none;
+    margin-left: 0;
+}
+
+.bn {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.banner {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+}
+
+.default-btn {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 0;
+}
+
+.purchase {
+    background: blue;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    padding-top: 10px;
+    margin-right: 5px;
+    border-radius: 5px 5px;
+}
+
+/* phần nền màng hình */
+.video-banner {
+    margin-top: -100px;
+    /* overflow: hidden; */
+    background: url(../images/banner-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 920px;
+}
+
+@media screen and (max-width: 1240px) {
+    .video-banner {
+        height: 700px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .video-banner {
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 786px) {
+    .video-banner {
+        height: 300px;
+    }
+}
+
+.bannar-conent {
+    padding-top: 20em;
+    text-align: center;
+
+}
+
+.bannar-conent-inner {
+    color: #fff;
+    margin: 0;
+
+}
+
+.banner-conent-inner-h1 {
+    color: #f3297c;
+    font-size: 42px;
+    margin-bottom: 25px;
+    margin: 0;
+}
+
+/* phần nội dung chương trình */
+.homepage-layout {
+    background: #060826;
+    height: 491px;
+    color: #fff;
+}
+
+.homepage-layout .overlay .homepage-layout-content {
+    max-width: 100%;
+    padding-top: 200px;
+    text-align: center;
+}
+
+.homepage-layout-content-h2 {
+    font-size: 40px;
+}
+
+.purchase {
+    display: inline-block;
+    background: #4a00e0;
+    color: #fff;
+    width: 180px;
+    height: 44px;
+}
+
+/* phần chia flebox */
+.landing-demo {
+    background: linear-gradient(to bottom, #000, #070540);
+    padding: 100px 0;
+}
+
+@media (max-width: 1200px) {
+    .landing-demo {
+        height: 1140px;
+    }
+}
+
+@media (max-width: 992px) {
+    .landing-demo {
+        height: 960px;
+    }
+}
+
+@media (max-width: 768px) {
+    .landing-demo {
+        height: 720px;
+    }
+}
+
+@media (max-width: 576px) {
+    .landing-demo {
+        height: 540px;
+    }
+}
+
+.container {
+    background: none;
+    max-width: 1170px;
+    padding-right: 15px;
+    padding-left: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 960px;
+        
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+.row {
+    /* overflow: hidden; */
+    height: 500px;
+}
+
+@media (min-width: 1200px) {
+    .row {
+        height: 1140px;
+    }
+}
+
+@media (min-width: 992px) {
+    .row {
+        height: 960px;
+    }
+}
+
+@media (min-width: 768px) {
+    .row {
+        height: 720px;
+    }
+}
+
+@media (min-width: 576px) {
+    .row {
+        height: 540px;
+    }
+}
+
+.boldest {
+    font-weight: 900;
+}
+
+@media (min-width: 768px) {
+    .col-md-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+.landing-demo-content {
+    text-align: center;
+    padding: 0 15px;
+}
+
+@media (min-width: 992px) {
+
+    .mb-lg-0,
+    .my-lg-0 {
+        margin-bottom: 0 !important;
+    }
+}
+
+.landing-demo.robotar .default-btn {
+    border: 2px solid white;
+    background-image: linear-gradient(to right, #01ccff, #2de2ca);
+    color: black;
+}
+
+.default-btn {
+    padding: 10px 30px;
+    color: #fff;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 16px;
+    background-image: linear-gradient(to right, #4A00E0, #8E2DE2);
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.landing-demo.robotar {
+    background-color: #51eeffad;
+}
+
+.p-3 {
+    overflow: hidden;
+    max-height: 31.2em;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.landingpage-image {
+    height: 2000px;
+    position: relative;
+    background-size: cover;
+
+}
+
+.landingpage-image .img {
+    position: absolute;
+    border-radius: 4px;
+    bottom: 0px;
+    transition: all 5s ease-out;
+
+}
+
+.landingpage-image:hover .img {
+    bottom: 1500px;
+}
+.landingpage-image-home-2 {
+    height: 2000px;
+    position: relative;
+    background-size: cover;
+
+}
+
+.landingpage-image-home-2 .img-home-2 {
+    position: absolute;
+    border-radius: 4px;
+    bottom: 155px;
+    transition: all 5s ease-out;
+
+}
+
+.landingpage-image-home-2:hover .img-home-2 {
+    bottom: 1500px;
+}
+
+#row-flex {
+    flex-direction: row-reverse;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+.featured-block {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.features-section {
+    position: relative;
+    color: #fff;
+    padding: 90px 0px 60px;
+}
+
+.features-section {
+    position: relative;
+    padding: 90px 0px 60px;
+    background: #000;
+}
+
+.featured-block .inner-box {
+    position: relative;
+    text-align: center;
+    padding: 60px 15px;
+    padding-top: 35px;
+    border-radius: 8px;
+    background-color: #171835;
+    box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+}
+
+.featured-block .inner-box .icon-box {
+    position: relative;
+    width: 110px;
+    height: 110px;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-color: #060826;
+}
+
+.featured-block .inner-box .border-one {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    border-radius: 8px;
+}
+
+.featured-block .inner-box .border-two {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    border-radius: 8px;
+}
+
+.featured-block .inner-box .border-one::before {
+    position: absolute;
+    content: '';
+    right: 0px;
+    top: 0px;
+    width: 2px;
+    height: 0px;
+    background-color: #fff;
+    -webkit-transition: all 600ms ease;
+    transition: all 600ms ease;
+}
+
+.featured-block .inner-box:hover .border-one::before {
+    height: 205px;
+}
+
+.featured-block .inner-box .border-one::after {
+    position: absolute;
+    content: '';
+    right: 0px;
+    bottom: 0px;
+    width: 0px;
+    height: 2px;
+    background-color: #fff;
+    -webkit-transition: all 600ms ease;
+    transition: all 600ms ease;
+}
+
+.featured-block .inner-box:hover .border-one::after {
+    width: 267px;
+}
+
+.featured-block .inner-box .border-two::before {
+    position: absolute;
+    content: '';
+    left: 0px;
+    bottom: 0px;
+    width: 2px;
+    height: 0px;
+    background-color: #fff;
+    -webkit-transition: all 600ms ease;
+    transition: all 600ms ease;
+}
+
+.featured-block .inner-box:hover .border-two::before {
+    height: 205px;
+}
+
+.featured-block .inner-box .border-two::after {
+    position: absolute;
+    content: '';
+    left: 0px;
+    top: 0px;
+    width: 0px;
+    height: 2px;
+    background-color: #fff;
+    -webkit-transition: all 600ms ease;
+    transition: all 600ms ease;
+}
+
+.featured-block .inner-box:hover .border-two::after {
+    width: 267px;
+}
+
+.clearfix {
+    overflow: hidden;
+    height: 700px;
+}
+
+/* phan cuoi cua trang web */
+.text-center {
+    text-align: center;
+    color: #fff;
+}
+
+.footer-top {
+    padding: 100px 0;
+    background-color: #171835;
+}
+
+.footer-bottom {
+    background-color: #010004;
+    padding: 30px 0;
+}
+
+.footer-top .purchase-now {
+    font-size: 18px;
+    color: #fff;
+    padding: 10px 40px;
+    background-color: #6d32f7;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.footer-top .purchase-now:hover {
+    background: linear-gradient(to right, blue, #2de2ca);
+}
